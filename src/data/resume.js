@@ -8,9 +8,9 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Aspiring Front-end Developer. Passionate about building practical solutions that improve user experience.",
+    "Aspiring Front-end Developer dedicated to crafting accessible web experiences that make a positive difference in people's lives.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "A proactive and detail-oriented professional with a strong sense of duty in every project I undertake. Currently pursuing my Bachelor's degree in Information Technology at Eastern Visayas State University, where I earned recognition as **Best in Thesis/Capstone Project** for my innovative solutions and technical excellence. My courteous approach and commitment to quality are reflected in my project implementations, consistently demonstrating sound judgment and professionalism in leading development initiatives.",
   avatarUrl: "/me.jpg",
   skills: [
     "HTML",
@@ -32,13 +32,13 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/Maarrrkkkkk",
         icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/mark-anthony-aguirre/",
         icon: Icons.linkedin,
         navbar: true,
       },
@@ -101,18 +101,17 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "#",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      image: "/capstone-project.jpg",
+      video: "",
     },
     {
       title: "Online Academic Archive and Yearbook System",
@@ -141,8 +140,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/archive-system.jpg",
+      video: "",
     },
   ],
 };
