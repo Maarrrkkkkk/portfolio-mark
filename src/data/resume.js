@@ -89,7 +89,7 @@ export const DATA = {
       dates: "2024 - 2025",
       active: true,
       description:
-        "A web-based system modernizing capstone project management at EVSU IT Department. Features conflict-free scheduling (Greedy Algorithm), intelligent adviser-student matching (Content-Based Filtering), and automated grading.",
+        "A web-based system modernizing capstone project management at EVSU IT Department. Features **conflict-free scheduling** (Greedy Algorithm), **intelligent adviser-student matching** (Content-Based Filtering), and **automated grading**.",
       technologies: [
         "Django",
         "JavaScript",
@@ -100,13 +100,8 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "#",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "#",
+          href: "https://github.com/KurtLD/Capstone-System-Project-V3",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -119,7 +114,7 @@ export const DATA = {
       dates: "March 2025 - June 2025",
       active: true,
       description:
-        "Developed for Eastern Visayas State University – Graduate School, this platform functions like a university-specific Google Scholar, allowing students and admin to upload theses, dissertations, and re-entry papers with citation and download tracking.",
+        "Developed for Eastern Visayas State University – Graduate School, this platform functions as an **Academic Repository**, allowing students and admin to upload **theses**, **dissertations**, and **re-entry papers** with citation and download tracking.",
       technologies: [
         "Django",
         "JavaScript",
@@ -130,13 +125,8 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "#",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "#",
+          href: "https://github.com/Maarrrkkkkk/Django_project",
           icon: <Icons.github className="size-3" />,
         },
       ],
