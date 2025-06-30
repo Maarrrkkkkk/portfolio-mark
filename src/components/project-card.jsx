@@ -49,7 +49,7 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-contain"
+            className="h-40 w-full overflow-hidden object-contain px-2"
           />
         )}
       </Link>

@@ -1,8 +1,29 @@
+import {
+  DiHtml5,
+  DiCss3,
+  DiJavascript1,
+  DiReact,
+  DiBootstrap,
+  DiGit,
+  DiDjango,
+  DiPython,
+} from "react-icons/di";
+import { SiTailwindcss, SiSqlite } from "react-icons/si";
 import { GlobeIcon, MailIcon } from "lucide-react";
 
 export const Icons = {
   globe: (props) => <GlobeIcon {...props} />,
   email: (props) => <MailIcon {...props} />,
+  html: (props) => <DiHtml5 {...props} />,
+  css: (props) => <DiCss3 {...props} />,
+  javascript: (props) => <DiJavascript1 {...props} />,
+  react: (props) => <DiReact {...props} />,
+  tailwind: (props) => <SiTailwindcss {...props} />,
+  bootstrap: (props) => <DiBootstrap {...props} />,
+  git: (props) => <DiGit {...props} />,
+  django: (props) => <DiDjango {...props} />,
+  python: (props) => <DiPython {...props} />,
+  sqlite: (props) => <SiSqlite {...props} />,
   linkedin: (props) => (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
       <title>LinkedIn</title>

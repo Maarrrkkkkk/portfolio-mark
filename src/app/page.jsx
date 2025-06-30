@@ -7,6 +7,7 @@ import Markdown from "react-markdown";
 import { ResumeCard } from "../components/resume-card";
 import { ProjectCard } from "../components/project-card";
 import Link from "next/link";
+import { SkillCarousel } from "../components/skill-carousel";
 
 export default function Page() {
   return (
@@ -74,12 +75,8 @@ export default function Page() {
 
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <h2 className="text-xl font-bold">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill) => (
-              <Badge key={skill}>{skill}</Badge>
-            ))}
-          </div>
+          <h2 className="text-xl text-center font-bold">Skills</h2>
+          <SkillCarousel skills={DATA.skills} />
         </div>
       </section>
 
