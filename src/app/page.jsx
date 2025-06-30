@@ -88,7 +88,9 @@ export default function Page() {
           <h2 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 text-center">
             GitHub Contributions
           </h2>
-          <YearPickerCalendar />
+          <div className="w-full max-w-3xl bg-background/50 p-6 rounded-lg border border-border shadow-sm">
+            <YearPickerCalendar />
+          </div>
         </div>
       </section>
 
@@ -163,7 +165,7 @@ function YearPickerCalendar() {
   return (
     <div className="flex flex-col items-center w-full max-w-full">
       <select
-        className="mb-2 px-2 py-1 rounded border border-gray-300 dark:bg-black dark:text-white w-full max-w-[160px] text-sm"
+        className="mb-2 px-3 py-2 rounded-md border border-input bg-background text-sm shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring w-full max-w-[180px]"
         value={year}
         onChange={(e) => setYear(Number(e.target.value))}
       >
