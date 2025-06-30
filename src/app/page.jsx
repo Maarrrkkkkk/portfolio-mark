@@ -8,6 +8,9 @@ import { ResumeCard } from "../components/resume-card";
 import { ProjectCard } from "../components/project-card";
 import Link from "next/link";
 import { SkillCarousel } from "../components/skill-carousel";
+import GitHubCalendar from "react-github-calendar";
+import React, { useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function Page() {
   return (
@@ -80,6 +83,15 @@ export default function Page() {
         </div>
       </section>
 
+      <section id="github-contributions">
+        <div className="flex flex-col items-center py-4 w-full px-1 sm:px-0">
+          <h2 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 text-center">
+            GitHub Contributions
+          </h2>
+          <YearPickerCalendar />
+        </div>
+      </section>
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -140,5 +152,32 @@ export default function Page() {
         </div>
       </section>
     </main>
+  );
+}
+
+function YearPickerCalendar() {
+  const currentYear = new Date().getFullYear();
+  const [year, setYear] = useState(currentYear);
+  const years = [2023, 2024, 2025];
+
+  return (
+    <div className="flex flex-col items-center w-full max-w-full">
+      <select
+        className="mb-2 px-2 py-1 rounded border border-gray-300 dark:bg-black dark:text-white w-full max-w-[160px] text-sm"
+        value={year}
+        onChange={(e) => setYear(Number(e.target.value))}
+      >
+        {years.map((y) => (
+          <option key={y} value={y}>
+            {y}
+          </option>
+        ))}
+      </select>
+      <div className="w-full overflow-x-auto pb-2">
+        <div className="min-w-[280px] sm:min-w-[340px] max-w-full mx-auto">
+          <GitHubCalendar username="Maarrrkkkkk" year={year} />
+        </div>
+      </div>
+    </div>
   );
 }
