@@ -159,25 +159,31 @@ export default function Page() {
 
 function YearPickerCalendar() {
   const currentYear = new Date().getFullYear();
-  const [year, setYear] = useState(currentYear);
-  const years = [2023, 2024, 2025];
+  const [year, setYear] = useState("all");
+  const years = ["all", 2023, 2024, 2025];
 
   return (
     <div className="flex flex-col items-center w-full max-w-full">
       <select
         className="mb-2 px-3 py-2 rounded-md border border-input bg-background text-sm shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring w-full max-w-[180px]"
         value={year}
-        onChange={(e) => setYear(Number(e.target.value))}
+        onChange={(e) =>
+          setYear(e.target.value === "all" ? "all" : Number(e.target.value))
+        }
       >
         {years.map((y) => (
           <option key={y} value={y}>
-            {y}
+            {y === "all" ? "All Years" : y}
           </option>
         ))}
       </select>
       <div className="w-full overflow-x-auto pb-2">
         <div className="min-w-[280px] sm:min-w-[340px] max-w-full mx-auto">
-          <GitHubCalendar username="Maarrrkkkkk" year={year} />
+          {year === "all" ? (
+            <GitHubCalendar username="Maarrrkkkkk" />
+          ) : (
+            <GitHubCalendar username="Maarrrkkkkk" year={year} />
+          )}
         </div>
       </div>
     </div>
