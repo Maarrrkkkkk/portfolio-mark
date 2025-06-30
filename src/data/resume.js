@@ -21,7 +21,6 @@ export const DATA = {
     "Bootstrap",
     "Git",
     "Django",
-    "Bootstrap",
     "Python",
     "SQLite",
   ],
